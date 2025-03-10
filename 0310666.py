@@ -95,7 +95,7 @@ feature_names = ['P_F', 'LAC','preparation_time', 'Nutritional_Methods', 'blood_
        'blood_glucose_1_11.1', 'blood_glucose_2_7.8', 'mechanical_ventilation'
        ]
 
-decision_time= st.selectbox("preparation_time (0=in 6 hour, 1=above 6 hour):", options=[0, 1], format_func=lambda x: 'in 6 hour (0)' if x == 0 else 'above 6 hour (1)')
+preparation_time= st.selectbox("preparation_time (0=in 6 hour, 1=above 6 hour):", options=[0, 1], format_func=lambda x: 'in 6 hour (0)' if x == 0 else 'above 6 hour (1)')
 Nutritional_Methods= st.selectbox("Nutritional_Methods (0=EN, 1=PN):", options=[0, 1], format_func=lambda x: 'EN (0)' if x == 0 else 'PN (1)')
 blood_glucose_0= st.selectbox("blood_glucose_0_7.8-11.1 (0=NO, 1=YES):", options=[0, 1], format_func=lambda x: 'NO (0)' if x == 0 else 'YES (1)')
 blood_glucose_1= st.selectbox("blood_glucose_1_11.1 (0=NO, 1=YES):", options=[0, 1], format_func=lambda x: 'NO (0)' if x == 0 else 'YES (1)')
