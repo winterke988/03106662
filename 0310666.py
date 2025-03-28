@@ -141,8 +141,8 @@ if st.button("Predict"):
           
     st.write(advice)
      # 添加SHAP可视化
-    st.markdown("### SHAP解释")
-      # SHAP解释
+    st.markdown("### SHapley Additive exPlanations")
+      # SHAP 
     explainer = shap.TreeExplainer(model)
     shap_values = explainer(features)
     
